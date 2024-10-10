@@ -16,7 +16,7 @@ endif
 	$(CC) $(CFLAGS) -c -o $@ $<
 
 json2gelf: $(OBJ)
-	$(CC) $(LDFLAGS) -o $@ $^
+	$(CC) -o $@ $^ $(LDFLAGS)
 
 .PHONY: clean
 
