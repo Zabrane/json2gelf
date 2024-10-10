@@ -52,6 +52,11 @@ Some scripts are already in the [scripts folder](scripts), but you just need to 
 ./scripts/varnish2json|./json2gelf
 ```
 
+### Discussion
+
+`json2gelf` was suggested [here](https://graylog2.narkive.com/KDaKvBTU/varnish-and-varnishncsa-udp-log-pipe)
+
+
 ## Warnings
 
 - Logstash currently has a bug making the JSON parser crash if JSON is badly formated, if using logstash, please leave json-valiation enabled. [Issue link](https://github.com/logstash-plugins/logstash-input-gelf/pull/27)
