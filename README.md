@@ -1,19 +1,22 @@
-#json2gelf
+# json2gelf
 
-##Description
+## Description
 
 Gets JSON lines from stdin and forward it as GELF packet.
 
-##Compilation
+## Compilation
 
 ```
+On macOS:
+## brew install argp-standalone
+
 make clean
 make
 ```
 
-##Usage
+## Usage
 
-###Help
+### Help
 
 ```
 $ ./json2gelf --help
