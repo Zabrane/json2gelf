@@ -7,8 +7,11 @@ Gets JSON lines from stdin and forward it as GELF packet.
 ## Compilation
 
 ```
-On macOS:
-## brew install argp-standalone
+. On macOS:
+> brew install argp-standalone
+
+. on Linux:
+> apt info zlib1g-dev
 
 make clean
 make
@@ -40,7 +43,7 @@ Report bugs to <gregory@siwhine.net>.
 ```
 
 
-###Helper scripts
+### Helper scripts
 
 
 Some scripts are already in the [scripts folder](scripts), but you just need to pipe valid json packets to it.
@@ -49,7 +52,7 @@ Some scripts are already in the [scripts folder](scripts), but you just need to 
 ./scripts/varnish2json|./json2gelf
 ```
 
-##Warnings
+## Warnings
 
 - Logstash currently has a bug making the JSON parser crash if JSON is badly formated, if using logstash, please leave json-valiation enabled. [Issue link](https://github.com/logstash-plugins/logstash-input-gelf/pull/27)
 
